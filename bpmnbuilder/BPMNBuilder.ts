@@ -18,9 +18,9 @@ export class BPMNBuilder {
 
     public async produceDiagram () {
         const AutoLayout = require('bpmn-auto-layout');    
-        const autoLayout = new AutoLayout();
+        //const autoLayout = new AutoLayout();
         //const BPMNComplete = await autoLayout.layoutProcess(this._TESTDIAG); //testing purpose
-        const BPMNComplete = await autoLayout.layoutProcess(this.BPMNWithoutDiagram);
+        const BPMNComplete = await AutoLayout.layoutProcess(this.BPMNWithoutDiagram);
 /*      
         let split1: string = BPMNComplete.split('<'+this._processNodeName+' ')[0];
         let split2: string = BPMNComplete.split('</'+this._processNodeName+'>')[1];

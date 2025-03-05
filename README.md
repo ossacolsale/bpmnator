@@ -138,3 +138,7 @@ cd bpmnator              ## if you cloned git repository
 # execute main file:
 node dist/bin/bmpnator
 ```
+
+## License
+
+BSD 3-Clause
